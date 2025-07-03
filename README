@@ -1,0 +1,104 @@
+🛡️ Secure Code Review Tool – Static Security Analyzer for Python
+
+🎯 Objective
+To provide developers with a graphical tool that can analyze Python code for common security issues, and give actionable recommendations and remediation steps.
+
+🧰 Technologies Used
+Python – Programming language.
+
+Tkinter – For building the GUI.
+
+ScrolledText – For handling large code and result displays.
+
+Custom Static Analysis Logic – Built-in checks for common security anti-patterns.
+
+🧠 How It Works
+User loads a .py file or pastes code manually.
+
+The code is scanned for predefined risky patterns, such as:
+
+Use of eval(), exec(), or os.system()
+
+Importing pickle
+
+Hardcoded passwords
+
+Unsafe subprocess usage
+
+Lack of input validation
+
+Each issue is reported with:
+
+A description
+
+A recommendation
+
+A "How to fix" section
+
+If no issues are found:
+
+A ✅ clean bill of health message is shown.
+
+🖥️ GUI Layout
+🔘 Load Python File: Opens a file dialog to load .py files.
+
+🔍 Analyze Code: Starts the static analysis.
+
+🧾 Code to Review: Displays the loaded or pasted code.
+
+📋 Security Issues, Recommendations & Remediation: Shows results in detail with red text to highlight risks.
+
+This project is a Python-based Secure Code Review Tool with a graphical user interface that assists developers in 
+identifying common security vulnerabilities within Python source code. The tool allows users to load or input code, 
+and performs static analysis to detect risky patterns such as use of eval(), hardcoded passwords, insecure module imports, 
+and command injections. For each detected issue, it provides detailed recommendations and remediation steps based on secure
+coding best practices. Built using Tkinter, the GUI offers an intuitive interface, making it an accessible and effective tool
+for learning and practicing secure software development.
+
+🧠 What You Can Learn from This Project
+🔐 1. Secure Coding Practices in Python
+You'll learn to recognize dangerous functions and patterns, like:
+
+eval(), exec() → Code execution vulnerabilities
+
+os.system() and subprocess → Command injection risks
+
+pickle → Unsafe deserialization
+
+Hardcoded passwords → Credential exposure risks
+
+Unvalidated input() → Unsafe user input handling
+
+✅ This helps you write more secure Python code in future projects.
+
+🧰 2. Static Code Analysis
+You’ll understand:
+
+What static analysis is (scanning code without executing it)
+
+How to build a simple analyzer using string patterns
+
+How to structure issue detection and reporting
+
+✅ Builds your skills in basic security tooling.
+
+🖼️ 3. GUI Development with Tkinter
+You'll learn how to:
+
+Create a GUI using tkinter
+
+Use buttons, labels, and text boxes
+
+Handle file uploads and analysis results display
+
+✅ Useful if you want to build Python desktop apps.
+
+📂 4. File Handling and User Interaction
+How to use filedialog to open .py files
+
+How to read file contents and populate text widgets
+
+✅ Helps you interact with real file systems and text processing in Python.
+
+
+Run Command: python secure_code.py
